@@ -4,27 +4,42 @@
 <head>
     <link rel="stylesheet" type="text/css" href="mystyle.css">
     <script>
-        
+      function ShowBoomkin() {
+        var img = document.createElement("img");
+        img.src = "./boomkin-dancing.gif";
+        img.className = "round";
+        var destination = document.getElementById("boomkin");
+        destination.append(img);
+      }
     </script>
     
-<title>Page Title</title>
+<title>My Page</title>
 </head>
 <body>
-  <h1>Important Stuff here okk?</h1>
-  <div>
-    <p>
-      This is my page
-    </p>
-    <h2>
-      Contact:<br>
-    </h2>
-      <form>
-        <p>Subject:</p><input>
-        <P>Message:</P><textarea></textarea>
-        <br><button>Submit</button>
-      </form>
-      <p>Also, here have a dancing moonkin<br>:</p>
-      <img src=".\boomkin-dancing.gif" class="boomkin" />     
+  <h1>My Page</h1>
+  <ul>
+    <li><h2>Myself</h2>
+      <p>Hi! My Name is Marius Knudsen, and i am 24 years old.</p>
+    </li>
+    <li><h2>Education</h2>
+      <ul>
+        <li><p>Datamatiker from Zealand Institute of Business and Technology</p></li>
+      </ul>
+    </li>
+    <li><h2>Work Experience</h2>
+      <ul>
+        <li><p>None yet :D</p></li>
+      </ul>
+    </li>
+    <li><h2>Interests</h2>
+      <p>My main recreational hobbies are typically gaming and making scripts/other modifications to them.<br>
+         Otherwise i am also interested in History and Programming stuff (duh)
+      </p>
+    </li>
+  </ul>  
+  <input id="clickMe" type="button" value="Click for a surprise!" onclick="ShowBoomkin()" />
+  <div id="boomkin">
+
   </div>
 </body>
 </html> 

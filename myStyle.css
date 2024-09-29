@@ -1,11 +1,11 @@
 
 /* H1 tags */
-h1 { 
+h2 { 
     background-color: rgb(50, 28, 70);
     color: white;
     }
 
-.boomkin {
+.round {
     border-radius: 100%;
 }
 
